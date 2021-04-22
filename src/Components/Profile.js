@@ -49,7 +49,7 @@ function Profile(props) {
         <LazyLoad
           style={{ margin: "auto", position: "relative", bottom: "120px" }}
         >
-          <Avatar alt="Remy Sharp" src={User} className={classes.large} />
+          <Avatar alt="Harshith" src={User} className={classes.large} />
         </LazyLoad>
       </div>
       <br />
