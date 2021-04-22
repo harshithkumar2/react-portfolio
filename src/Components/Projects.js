@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazyload";
 
 function Projects(props) {
   var i = 0;
@@ -16,13 +17,15 @@ function Projects(props) {
     return (
       <Card style={{ margin: "auto", maxWidth: "750px" }} key={pro.name}>
         <CardActionArea>
-          <CardMedia
-            component="img"
-            alt="image"
-            height="160"
-            image={pro.icon}
-            title="portfolio"
-          />
+          <LazyLoad>
+            <CardMedia
+              component="img"
+              alt="image"
+              height="160"
+              image={pro.icon}
+              title="portfolio"
+            />
+          </LazyLoad>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {pro.name}

@@ -6,6 +6,7 @@ import User from "../user.jpg";
 import Table from "react-bootstrap/Table";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import LazyLoad from "react-lazyload";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,19 +28,21 @@ function Profile(props) {
     <div>
       <div
         style={{
-          backgroundImage: `url(${Image})`,
           height: "370px",
           width: "340px",
           margin: "auto",
         }}
-      ></div>
+      >
+        <LazyLoad>
+          <img src={Image} alt="background" height={370} width={340} />
+        </LazyLoad>
+      </div>
       <div className={classes.root}>
-        <Avatar
+        <LazyLoad
           style={{ margin: "auto", position: "relative", bottom: "120px" }}
-          alt="Remy Sharp"
-          src={User}
-          className={classes.large}
-        />
+        >
+          <Avatar alt="Remy Sharp" src={User} className={classes.large} />
+        </LazyLoad>
       </div>
       <div
         style={{
