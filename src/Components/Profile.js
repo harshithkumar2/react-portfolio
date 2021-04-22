@@ -7,6 +7,11 @@ import Table from "react-bootstrap/Table";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import LazyLoad from "react-lazyload";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// initialization
+AOS.init();
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,25 +37,40 @@ function Profile(props) {
           width: "340px",
           margin: "auto",
         }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
         <LazyLoad>
           <img src={Image} alt="background" height={370} width={340} />
         </LazyLoad>
       </div>
-      <div className={classes.root}>
+      <div className={classes.root} data-aos="flip-left">
         <LazyLoad
           style={{ margin: "auto", position: "relative", bottom: "120px" }}
         >
           <Avatar alt="Remy Sharp" src={User} className={classes.large} />
         </LazyLoad>
       </div>
+      <br />
       <div
         style={{
           width: "340px",
           margin: "auto",
         }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
-        <Table striped bordered hover size="md">
+        <Table
+          striped
+          bordered
+          hover
+          size="md"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <tbody>
             <tr>
               <th>Name:</th>
@@ -86,7 +106,15 @@ function Profile(props) {
             </tr>
           </tbody>
         </Table>
-        <Table striped bordered hover size="md">
+        <Table
+          striped
+          bordered
+          hover
+          size="md"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <p style={{ textAlign: "center", fontWeight: "bold" }}>
             PERSONAL SKILLS
           </p>
@@ -101,11 +129,15 @@ function Profile(props) {
           </tbody>
         </Table>
       </div>
+      <br />
       <div
         style={{
           width: "340px",
           margin: "auto",
         }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
         <Table striped bordered hover size="md">
           <p style={{ textAlign: "center", fontWeight: "bold" }}>
@@ -122,11 +154,15 @@ function Profile(props) {
           </tbody>
         </Table>
       </div>
+      <br />
       <div
         style={{
           width: "340px",
           margin: "auto",
         }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
         <Table striped bordered hover size="md">
           <p style={{ textAlign: "center", fontWeight: "bold" }}>
@@ -143,11 +179,15 @@ function Profile(props) {
           </tbody>
         </Table>
       </div>
+      <br />
       <div
         style={{
           width: "340px",
           margin: "auto",
         }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
         <Table hover size="md">
           <p style={{ textAlign: "center", fontWeight: "bold" }}>
