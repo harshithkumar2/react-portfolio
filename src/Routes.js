@@ -10,6 +10,7 @@ import "./App.css";
 const Home = React.lazy(() => import("./Components/Home"));
 const ProjectExplore = React.lazy(() => import("./Components/ProjectExplore"));
 const ProjectProfile = React.lazy(() => import("./Components/ProjectProfile"));
+const Skill = React.lazy(() => import("./Components/Skill"));
 
 function Routes(props) {
   return (
@@ -26,6 +27,7 @@ function Routes(props) {
             <Route path="/" exact component={Home} />
             <Route path="/project/explore/:id" component={ProjectExplore} />
             <Route path="/myprofile" component={ProjectProfile} />
+            <Route path="/skills" component={Skill} />
           </Switch>
         </Suspense>
       </HashRouter>

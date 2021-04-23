@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import HomeIcon from "@material-ui/icons/Home";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import FilterTiltShiftIcon from "@material-ui/icons/FilterTiltShift";
+import ComputerIcon from "@material-ui/icons/Computer";
 
 const drawerWidth = 240;
 
@@ -119,7 +120,7 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap className={classes.col}>
-            PORTFOLIO
+            HARSHITH KUMAR
           </Typography>
         </Toolbar>
       </AppBar>
@@ -158,6 +159,15 @@ export default function PersistentDrawerLeft() {
             </ListItemIcon>
             <Link to="/myprofile" className={classes.nodesign}>
               <ListItemText primary={"MY PROFILE"} />
+            </Link>
+          </ListItem>
+          <br></br>
+          <ListItem button key={18}>
+            <ListItemIcon>
+              <ComputerIcon />
+            </ListItemIcon>
+            <Link to="/skills" className={classes.nodesign}>
+              <ListItemText primary={"MY SKILLS"} />
             </Link>
           </ListItem>
           <br></br>
