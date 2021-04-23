@@ -5,7 +5,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 // import ProjectProfile from "./Components/ProjectProfile";
 // import LinearProgress from "@material-ui/core/LinearProgress";
 import { Spin } from "antd";
-import "../App.css";
+import "./App.css";
 
 const Home = React.lazy(() => import("./Components/Home"));
 const ProjectExplore = React.lazy(() => import("./Components/ProjectExplore"));
