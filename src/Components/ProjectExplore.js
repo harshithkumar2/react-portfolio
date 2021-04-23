@@ -2,7 +2,9 @@ import React, { Suspense } from "react";
 // import Navigation from "./Navigation";
 // import Mobilecar from "./Mobilecar";
 // import Tables from "./Tables";
-import LinearProgress from "@material-ui/core/LinearProgress";
+// import LinearProgress from "@material-ui/core/LinearProgress";
+import { Spin } from "antd";
+import "../App.css";
 
 const Navigation = React.lazy(() => import("./Navigation"));
 const Mobilecar = React.lazy(() => import("./Mobilecar"));
@@ -15,13 +17,8 @@ function ProjectExplore(props) {
     <div>
       <Suspense
         fallback={
-          <div
-            style={{
-              width: "90%",
-              transform: "translate(28px,350px)",
-            }}
-          >
-            <LinearProgress />
+          <div className="spinner">
+            <Spin size="large" tip="Loading..." />
           </div>
         }
       >

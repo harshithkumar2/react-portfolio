@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from "react";
 // import Projects from "./Projects";
 // import Navigation from "./Navigation";
-import LinearProgress from "@material-ui/core/LinearProgress";
+// import LinearProgress from "@material-ui/core/LinearProgress";
 import { Spin } from "antd";
 import "../App.css";
 

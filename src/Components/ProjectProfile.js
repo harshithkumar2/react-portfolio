@@ -1,7 +1,9 @@
 import React, { Component, Suspense } from "react";
 // import Navigation from "../Components/Navigation";
 // import Profile from "../Components/Profile";
-import LinearProgress from "@material-ui/core/LinearProgress";
+// import LinearProgress from "@material-ui/core/LinearProgress";
+import { Spin } from "antd";
+import "../App.css";
 
 const Navigation = React.lazy(() => import("../Components/Navigation"));
 const Profile = React.lazy(() => import("../Components/Profile"));
@@ -12,13 +14,8 @@ export default class ProjectProfile extends Component {
       <div>
         <Suspense
           fallback={
-            <div
-              style={{
-                width: "90%",
-                transform: "translate(28px,350px)",
-              }}
-            >
-              <LinearProgress />
+            <div className="spinner">
+              <Spin size="large" tip="Loading..." />
             </div>
           }
         >

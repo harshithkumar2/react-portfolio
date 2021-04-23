@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 // import Navigation from "./Components/Navigation";
+import { Spin } from "antd";
+import "../App.css";
 
 const Navigation = React.lazy(() => import("./Components/Navigation"));
 export default class App extends Component {
@@ -8,13 +10,8 @@ export default class App extends Component {
       <div>
         <Suspense
           fallback={
-            <div
-              style={{
-                width: "90%",
-                transform: "translate(28px,350px)",
-              }}
-            >
-              <LinearProgress />
+            <div className="spinner">
+              <Spin size="large" tip="Loading..." />
             </div>
           }
         >
