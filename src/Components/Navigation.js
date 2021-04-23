@@ -81,6 +81,9 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "black",
   },
+  col: {
+    color: "white",
+  },
 }));
 
 export default function PersistentDrawerLeft() {
@@ -115,7 +118,7 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" noWrap className={classes.col}>
             PORTFOLIO
           </Typography>
         </Toolbar>
