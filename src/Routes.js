@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 // import ProjectExplore from "./Components/ProjectExplore";
 // import ProjectProfile from "./Components/ProjectProfile";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import { Spin, Space } from "antd";
 
 const Home = React.lazy(() => import("./Components/Home"));
 const ProjectExplore = React.lazy(() => import("./Components/ProjectExplore"));
@@ -21,7 +22,7 @@ function Routes(props) {
                 transform: "translate(28px,350px)",
               }}
             >
-              <LinearProgress />
+              <Spin size="large" />
             </div>
           }
         >
