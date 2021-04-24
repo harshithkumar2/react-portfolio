@@ -1,5 +1,8 @@
 import React from "react";
 import "./Theme.css";
+import { CgSun } from "react-icons/cg/";
+import { HiMoon } from "react-icons/hi";
+import { Button } from "react-bootstrap";
 
 function Theme() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -25,13 +28,13 @@ function Theme() {
   return (
     <div>
       {darkMode ? (
-        <button onClick={() => setDarkMode(!darkMode)} className="light">
-          Light Mode
-        </button>
+        <Button variant="light" onClick={() => setDarkMode(!darkMode)}>
+          Light Mode <CgSun strokeWidth={1} size={20} />
+        </Button>
       ) : (
-        <button onClick={() => setDarkMode(!darkMode)} className="dark">
-          Dark Mode
-        </button>
+        <Button variant="dark" onClick={() => setDarkMode(!darkMode)}>
+          Dark Mode <HiMoon strokeWidth={1} size={20} />
+        </Button>
       )}
     </div>
   );
