@@ -13,11 +13,12 @@ AOS.init();
 
 function Timeline() {
   return (
-    <div className="bod">
+    <div>
       <Container>
         <Row>
           <Col>
-            <Card className="card">
+            <Card className="card" id="skill">
+              <br />
               <h3>FRONT END TECHNOLOGY</h3>
               <br />
               <div
@@ -35,7 +36,7 @@ function Timeline() {
                   }}
                   percent={80}
                   status="active"
-                  format={() => "HTML5"}
+                  format={() => <h4>HTML5</h4>}
                 />
 
                 <Progress
@@ -46,7 +47,7 @@ function Timeline() {
                   }}
                   percent={60}
                   status="active"
-                  format={() => "CSS3"}
+                  format={() => <h4>CSS3</h4>}
                 />
 
                 <Progress
@@ -57,7 +58,7 @@ function Timeline() {
                   }}
                   percent={85}
                   status="active"
-                  format={() => "Bootstrap"}
+                  format={() => <h4>Bootstrap</h4>}
                 />
 
                 <Progress
@@ -68,7 +69,7 @@ function Timeline() {
                   }}
                   percent={50}
                   status="active"
-                  format={() => "React"}
+                  format={() => <h4>React</h4>}
                 />
               </div>
             </Card>
@@ -77,7 +78,8 @@ function Timeline() {
         <br />
         <Row>
           <Col xs={12}>
-            <Card className="card">
+            <Card className="card" id="skill">
+              <br />
               <h3>BACK END LANGUAGE</h3>
               <br />
               <div
@@ -95,7 +97,7 @@ function Timeline() {
                   }}
                   percent={50}
                   status="active"
-                  format={() => "PYTHON"}
+                  format={() => <h4>Python</h4>}
                 />
 
                 <Progress
@@ -106,7 +108,7 @@ function Timeline() {
                   }}
                   percent={20}
                   status="active"
-                  format={() => "C++"}
+                  format={() => <h4>C++</h4>}
                 />
                 <Progress
                   type="circle"
@@ -116,7 +118,7 @@ function Timeline() {
                   }}
                   percent={30}
                   status="active"
-                  format={() => "PHP"}
+                  format={() => <h4>Php</h4>}
                 />
               </div>
             </Card>
@@ -125,7 +127,8 @@ function Timeline() {
         <br />
         <Row>
           <Col xs={12}>
-            <Card className="card">
+            <Card className="card" id="skill">
+              <br />
               <h3>BACK END FRAMEWORK</h3>
               <br />
               <div
@@ -142,7 +145,7 @@ function Timeline() {
                   }}
                   percent={70}
                   status="active"
-                  format={() => "FLASK"}
+                  format={() => <h4>Flask</h4>}
                 />
 
                 <Progress
@@ -153,7 +156,7 @@ function Timeline() {
                   }}
                   percent={65}
                   status="active"
-                  format={() => "DJANGO"}
+                  format={() => <h4>Django</h4>}
                 />
                 <Progress
                   type="circle"
@@ -163,7 +166,7 @@ function Timeline() {
                   }}
                   percent={60}
                   status="active"
-                  format={() => "JQuery"}
+                  format={() => <h4>Django</h4>}
                 />
               </div>
             </Card>
@@ -172,7 +175,8 @@ function Timeline() {
         <br />
         <Row>
           <Col xs={12}>
-            <Card className="card">
+            <Card className="card" id="skill">
+              <br />
               <h3>Databases and Others.</h3>
               <br />
               <div className="prog" data-aos="fade-up" data-aos-duration="3000">
@@ -184,7 +188,7 @@ function Timeline() {
                   }}
                   percent={70}
                   status="active"
-                  format={() => "MySQL"}
+                  format={() => <h4>MySQL</h4>}
                 />
 
                 <Progress
@@ -195,7 +199,7 @@ function Timeline() {
                   }}
                   percent={75}
                   status="active"
-                  format={() => "Git"}
+                  format={() => <h4>Git</h4>}
                 />
                 <Progress
                   type="circle"
@@ -205,7 +209,7 @@ function Timeline() {
                   }}
                   percent={70}
                   status="active"
-                  format={() => "Github"}
+                  format={() => <h4>Github</h4>}
                 />
                 <Progress
                   type="circle"
@@ -215,7 +219,7 @@ function Timeline() {
                   }}
                   percent={70}
                   status="active"
-                  format={() => "Heroku"}
+                  format={() => <h4>Github</h4>}
                 />
               </div>
             </Card>

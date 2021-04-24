@@ -1,0 +1,61 @@
+.dark {
+  background-color: #18181a;
+}
+
+.dark td {
+  color: white;
+}
+.dark th {
+  color: white;
+}
+.dark p {
+  color: white;
+}
+.dark h2 {
+  color: white;
+}
+
+.dark .Explore {
+  color: red;
+}
+.dark h4 {
+  color: white;
+  font-style: italic;
+}
+
+.dark h3 {
+  color: white;
+}
+.dark .cards {
+  background-color: #171d3f;
+}
+
+.dark #skill {
+  background-color: #171d3f;
+}
+
+.dark .nav_bar {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.dark h6 {
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  height: 50px;
+}
+
+.theme-btn {
+  margin-left: auto;
+}

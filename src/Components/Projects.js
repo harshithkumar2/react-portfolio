@@ -43,7 +43,11 @@ function Projects(props) {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
       >
-        <Card style={{ margin: "auto", maxWidth: "750px" }} key={pro.name}>
+        <Card
+          style={{ margin: "auto", maxWidth: "750px" }}
+          key={pro.name}
+          className="cards"
+        >
           <CardActionArea>
             <LazyLoad>
               <CardMedia
@@ -93,7 +97,7 @@ function Projects(props) {
 
           <CardActions>
             <Link to={`project/explore/${i++}`}>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" className="Explore">
                 Explore
               </Button>
             </Link>

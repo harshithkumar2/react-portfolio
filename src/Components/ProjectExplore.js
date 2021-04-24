@@ -28,6 +28,7 @@ function ProjectExplore(props) {
             data={JSON.parse(document.getElementById("data").innerHTML)}
             id={id}
           />
+          <br />
           <Tables
             data={JSON.parse(document.getElementById("data").innerHTML)}
             id={id}

@@ -20,6 +20,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import FilterTiltShiftIcon from "@material-ui/icons/FilterTiltShift";
 import ComputerIcon from "@material-ui/icons/Computer";
+const Theme = React.lazy(() => import("./Theme"));
 
 const drawerWidth = 240;
 
@@ -122,8 +123,12 @@ export default function PersistentDrawerLeft() {
           <Typography variant="h6" noWrap className={classes.col}>
             HARSHITH KUMAR
           </Typography>
+          <div className="theme-btn">
+            <Theme />
+          </div>
         </Toolbar>
       </AppBar>
+
       <Drawer
         className={classes.drawer}
         variant="persistent"
@@ -230,6 +235,7 @@ export default function PersistentDrawerLeft() {
           </ListItem>
         </List>
       </Drawer>
+
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
