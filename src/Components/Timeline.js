@@ -207,7 +207,7 @@ function Timeline() {
                     "0%": "#B40431",
                     "100%": "#87d068",
                   }}
-                  percent={50}
+                  percent={55}
                   status="active"
                   format={() => <h4>Heroku</h4>}
                 />
