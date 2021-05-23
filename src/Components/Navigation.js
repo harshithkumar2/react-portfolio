@@ -20,6 +20,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import FilterTiltShiftIcon from "@material-ui/icons/FilterTiltShift";
 import ComputerIcon from "@material-ui/icons/Computer";
+import "./spinner.css";
 const Theme = React.lazy(() => import("./Theme"));
 
 const drawerWidth = 240;

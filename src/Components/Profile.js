@@ -41,12 +41,11 @@ function Profile(props) {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
       >
-        <LazyLoad>
-          <img src={Image} alt="background" height={370} width={340} />
-        </LazyLoad>
+        <img src={Image} alt="background" height={370} width={340} />
       </div>
       <div className={classes.root} data-aos="flip-left">
         <LazyLoad
+          offset={100}
           style={{ margin: "auto", position: "relative", bottom: "120px" }}
         >
           <Avatar alt="Harshith" src={User} className={classes.large} />

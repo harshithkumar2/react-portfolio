@@ -158,16 +158,6 @@ function Timeline() {
                   status="active"
                   format={() => <h4>Django</h4>}
                 />
-                <Progress
-                  type="circle"
-                  strokeColor={{
-                    "0%": "#108ee9",
-                    "100%": "#87d068",
-                  }}
-                  percent={60}
-                  status="active"
-                  format={() => <h4>Django</h4>}
-                />
               </div>
             </Card>
           </Col>
@@ -217,9 +207,9 @@ function Timeline() {
                     "0%": "#B40431",
                     "100%": "#87d068",
                   }}
-                  percent={70}
+                  percent={50}
                   status="active"
-                  format={() => <h4>Github</h4>}
+                  format={() => <h4>Heroku</h4>}
                 />
               </div>
             </Card>

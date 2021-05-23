@@ -4,8 +4,8 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 // import ProjectExplore from "./Components/ProjectExplore";
 // import ProjectProfile from "./Components/ProjectProfile";
 // import LinearProgress from "@material-ui/core/LinearProgress";
-import { Spin } from "antd";
-import "./App.css";
+
+import "./Components/spinner.css";
 
 const Home = React.lazy(() => import("./Components/Home"));
 const ProjectExplore = React.lazy(() => import("./Components/ProjectExplore"));
@@ -18,8 +18,10 @@ function Routes(props) {
       <HashRouter>
         <Suspense
           fallback={
-            <div className="spinner">
-              <Spin size="large" tip="Loading..." />
+            <div className="container">
+              <div className="circle circle-red"></div>
+              <div className="circle circle-blue"></div>
+              <div className="circle circle-green"></div>
             </div>
           }
         >

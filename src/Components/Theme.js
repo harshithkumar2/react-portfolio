@@ -2,7 +2,6 @@ import React from "react";
 import "./Theme.css";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
-import { Button } from "react-bootstrap";
 
 function Theme() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -28,13 +27,17 @@ function Theme() {
   return (
     <div>
       {darkMode ? (
-        <Button variant="light" onClick={() => setDarkMode(!darkMode)}>
-          Light Mode <CgSun strokeWidth={1} size={20} />
-        </Button>
+        <CgSun
+          strokeWidth={1}
+          size={30}
+          onClick={() => setDarkMode(!darkMode)}
+        />
       ) : (
-        <Button variant="dark" onClick={() => setDarkMode(!darkMode)}>
-          Dark Mode <HiMoon strokeWidth={1} size={20} />
-        </Button>
+        <HiMoon
+          strokeWidth={1}
+          size={30}
+          onClick={() => setDarkMode(!darkMode)}
+        />
       )}
     </div>
   );
