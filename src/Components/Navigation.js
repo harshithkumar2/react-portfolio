@@ -188,11 +188,20 @@ export default function PersistentDrawerLeft() {
             </Link>
           </ListItem>
           <br></br>
-          <ListItem button key={2}>
+          <ListItem button key={0}>
             <ListItemIcon>
               <FilterTiltShiftIcon />
             </ListItemIcon>
             <Link to="/project/explore/1" className={classes.nodesign}>
+              <ListItemText primary={"NEWS SHORTS"} />
+            </Link>
+          </ListItem>
+          <br />
+          <ListItem button key={2}>
+            <ListItemIcon>
+              <FilterTiltShiftIcon />
+            </ListItemIcon>
+            <Link to="/project/explore/2" className={classes.nodesign}>
               <ListItemText primary={"VYAPAR"} />
             </Link>
           </ListItem>
@@ -201,7 +210,7 @@ export default function PersistentDrawerLeft() {
             <ListItemIcon>
               <FilterTiltShiftIcon />
             </ListItemIcon>
-            <Link to="/project/explore/2" className={classes.nodesign}>
+            <Link to="/project/explore/3" className={classes.nodesign}>
               <ListItemText primary={"EASY LIBRARY"} />
             </Link>
           </ListItem>
@@ -212,7 +221,7 @@ export default function PersistentDrawerLeft() {
             <ListItemIcon>
               <DonutLargeIcon />
             </ListItemIcon>
-            <Link to="/project/explore/3" className={classes.nodesign}>
+            <Link to="/project/explore/4" className={classes.nodesign}>
               <ListItemText primary={"POLLING SITE"} />
             </Link>
           </ListItem>
@@ -221,7 +230,7 @@ export default function PersistentDrawerLeft() {
             <ListItemIcon>
               <DonutLargeIcon />
             </ListItemIcon>
-            <Link to="/project/explore/4" className={classes.nodesign}>
+            <Link to="/project/explore/5" className={classes.nodesign}>
               <ListItemText primary={"USER-DOC"} />
             </Link>
           </ListItem>
@@ -230,7 +239,7 @@ export default function PersistentDrawerLeft() {
             <ListItemIcon>
               <DonutLargeIcon />
             </ListItemIcon>
-            <Link to="/project/explore/5" className={classes.nodesign}>
+            <Link to="/project/explore/6" className={classes.nodesign}>
               <ListItemText primary={"RENTER-WEB"} />
             </Link>
           </ListItem>
